@@ -3,9 +3,8 @@ import styled from "styled-components";
 import Card from "../Card/Card";
 
 const Container = styled.div`
-  margin-top: 20px;
+  margin-top: 120px;
   max-width: 1200px;
-  margin: 0 auto;
   padding: 5px;
   display: grid;
   grid-template-columns: 1fr;
@@ -26,12 +25,64 @@ const Container = styled.div`
 
 const Products = () => {
   return (
-    <>
-      <p>Products</p>
+    <div>
       <Container>
-        <Card>Card1</Card>
+        <Card dir="assets/img/products/product-001.jpg" border="1">
+          <p>
+            <strong>Camiseta Teste</strong> <br />
+            <s>R$ 89,90</s> R$ 74,99
+          </p>
+        </Card>
+        <Card dir="assets/img/products/product-002.jpg" border="1">
+          <p>
+            <strong>Camiseta Teste</strong> <br />
+            <s>R$ 89,90</s> R$ 74,99
+          </p>
+        </Card>
+        <Card dir="assets/img/products/product-003.jpg" border="1">
+          <p>
+            <strong>Camiseta Teste</strong> <br />
+            <s>R$ 89,90</s> R$ 74,99
+          </p>
+        </Card>
+        <Card dir="assets/img/products/product-004.jpg" border="1">
+          <p>
+            <strong>Camiseta Teste</strong> <br />
+            <s>R$ 89,90</s> R$ 74,99
+          </p>
+        </Card>
+        <Card dir="assets/img/products/product-005.jpg" border="1">
+          <p>
+            <strong>Camiseta Teste</strong> <br />
+            <s>R$ 89,90</s> R$ 74,99
+          </p>
+        </Card>
+        <Card dir="assets/img/products/product-006.jpg" border="1">
+          <p>
+            <strong>Camiseta Teste</strong> <br />
+            <s>R$ 89,90</s> R$ 74,99
+          </p>
+        </Card>
+        <Card dir="assets/img/products/product-007.jpg" border="1">
+          <p>
+            <strong>Camiseta Teste</strong> <br />
+            <s>R$ 89,90</s> R$ 74,99
+          </p>
+        </Card>
+        <Card dir="assets/img/products/product-008.jpg" border="1">
+          <p>
+            <strong>Camiseta Teste</strong> <br />
+            <s>R$ 89,90</s> R$ 74,99
+          </p>
+        </Card>
+        <Card dir="assets/img/products/product-009.jpg" border="1">
+          <p>
+            <strong>Camiseta Teste</strong> <br />
+            <s>R$ 89,90</s> R$ 74,99
+          </p>
+        </Card>
       </Container>
-    </>
+    </div>
   );
 };
 

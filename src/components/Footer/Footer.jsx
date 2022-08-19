@@ -20,6 +20,7 @@ const Ul = styled.ul`
 
   p {
     padding-left: 1rem;
+    white-space: nowrap;
   }
 
   li {

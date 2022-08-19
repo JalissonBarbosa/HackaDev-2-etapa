@@ -6,137 +6,58 @@ const Container = styled.div`
   overflow: hidden;
   text-align: center;
   box-sizing: border-box;
-  border: 1px solid #666;
+  border: ${({ border }) => (border === "1" ? "1px solid #666" : "0")};
+
+  div {
+    border: 0;
+    height: 150vw;
+    background: ${({ dir }) => "url(" + dir + ")top center/cover"};
+  }
+
+  @media (max-width: 400px) {
+    div {
+      width: 400px;
+      height: 600px;
+    }
+  }
+
+  @media (min-width: 576px) {
+    div {
+      width: 48vw;
+      height: 72vw;
+    }
+  }
+
+  @media (min-width: 768px) {
+    justify-self: center;
+
+    div {
+      width: 32vw;
+      height: 48vw;
+    }
+  }
+
+  @media (min-width: 992px) {
+    div {
+      width: 23.4vw;
+      height: 35.1vw;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    div {
+      width: 290px;
+      height: 435px;
+    }
+  }
 `;
 
-const Product01 = styled(Container)`
-  border: 0;
-  height: 400px;
-  background: url("assets/img/products/product-001.jpg") top center/cover;
-`;
-
-const Product02 = styled(Container)`
-  border: 0;
-  height: 400px;
-  background: url("assets/img/products/product-002.jpg") top center/cover;
-`;
-
-const Product03 = styled(Container)`
-  border: 0;
-  height: 400px;
-  background: url("assets/img/products/product-003.jpg") top center/cover;
-`;
-
-const Product04 = styled(Container)`
-  border: 0;
-  height: 400px;
-  background: url("assets/img/products/product-004.jpg") top center/cover;
-`;
-
-const Product05 = styled(Container)`
-  border: 0;
-  height: 400px;
-  background: url("assets/img/products/product-005.jpg") top center/cover;
-`;
-
-const Product06 = styled(Container)`
-  border: 0;
-  height: 400px;
-  background: url("assets/img/products/product-006.jpg") top center/cover;
-`;
-
-const Product07 = styled(Container)`
-  border: 0;
-  height: 400px;
-  background: url("assets/img/products/product-007.jpg") top center/cover;
-`;
-
-const Product08 = styled(Container)`
-  border: 0;
-  height: 400px;
-  background: url("assets/img/products/product-008.jpg") top center/cover;
-`;
-
-const Product09 = styled(Container)`
-  border: 0;
-  height: 400px;
-  background: url("assets/img/products/product-009.jpg") top center/cover;
-`;
-
-const Card = () => {
+const Card = ({ dir, border, children }) => {
   return (
     <>
-      <Container>
-        <Product01></Product01>
-        <p>
-          <strong>Ptoduto Teste</strong>
-          <br />
-          <s>R$ 89,90</s> R$ 74,99
-        </p>
-      </Container>
-      <Container>
-        <Product02></Product02>
-        <p>
-          <strong>Ptoduto Teste</strong>
-          <br />
-          <s>R$ 89,90</s> R$ 74,99
-        </p>
-      </Container>
-      <Container>
-        <Product03></Product03>
-        <p>
-          <strong>Ptoduto Teste</strong>
-          <br />
-          <s>R$ 89,90</s> R$ 74,99
-        </p>
-      </Container>
-      <Container>
-        <Product04></Product04>
-        <p>
-          <strong>Ptoduto Teste</strong>
-          <br />
-          <s>R$ 89,90</s> R$ 74,99
-        </p>
-      </Container>
-      <Container>
-        <Product05></Product05>
-        <p>
-          <strong>Ptoduto Teste</strong>
-          <br />
-          <s>R$ 89,90</s> R$ 74,99
-        </p>
-      </Container>
-      <Container>
-        <Product06></Product06>
-        <p>
-          <strong>Ptoduto Teste</strong>
-          <br />
-          <s>R$ 89,90</s> R$ 74,99
-        </p>
-      </Container>
-      <Container>
-        <Product07></Product07>
-        <p>
-          <strong>Ptoduto Teste</strong>
-          <br />
-          <s>R$ 89,90</s> R$ 74,99
-        </p>
-      </Container>
-      <Container>
-        <Product08></Product08>
-        <p>
-          <strong>Ptoduto Teste</strong>
-          <br />
-          <s>R$ 89,90</s> R$ 74,99
-        </p>
-      </Container>
-      <Container>
-        <Product09></Product09>
-        <p>
-          <strong>Ptoduto Teste</strong>
-          <br />
-          <s>R$ 89,90</s> R$ 74,99
-        </p>
+      <Container dir={dir} border={border}>
+        <div></div>
+        {children}
       </Container>
     </>
   );
