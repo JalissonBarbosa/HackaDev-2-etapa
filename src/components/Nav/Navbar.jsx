@@ -16,10 +16,6 @@ const Nav = styled.nav`
   justify-content: space-between;
   transition: 0.3s ease-in-out;
 
-  @media (max-width: 412px) {
-    width: 412px;
-  }
-
   @media (max-width: 768px) {
     background: #000;
     color: #fff;

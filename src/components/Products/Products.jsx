@@ -5,7 +5,6 @@ import Card from "../Card/Card";
 const Container = styled.div`
   margin-top: 120px;
   max-width: 1200px;
-
   padding: 5px;
   display: grid;
   grid-template-columns: 1fr;

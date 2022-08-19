@@ -19,16 +19,14 @@ const Container = styled.div`
 
 const Categories = () => {
   return (
-    <>
-      <Container>
-        <Card dir="assets/img/categories/feminino.jpg" border="0">
-          <p>Feminino</p>
-        </Card>
-        <Card dir="assets/img/categories/masculino.jpg" border="0">
-          <p>Masculino</p>
-        </Card>
-      </Container>
-    </>
+    <Container>
+      <Card dir="assets/img/categories/feminino.jpg" border="0">
+        <p>Feminino</p>
+      </Card>
+      <Card dir="assets/img/categories/masculino.jpg" border="0">
+        <p>Masculino</p>
+      </Card>
+    </Container>
   );
 };
 
