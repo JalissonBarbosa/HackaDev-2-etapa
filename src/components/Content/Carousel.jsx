@@ -163,31 +163,31 @@ const Container = styled.div`
 const Carousel = () => {
   return (
     <Container>
-      <ol class="carousel__viewport">
-        <li id="carousel__slide1" tabindex="0" class="carousel__slide">
-          <div class="carousel__snapper"></div>
+      <ol className="carousel__viewport">
+        <li id="carousel__slide1" tabIndex="0" className="carousel__slide">
+          <div className="carousel__snapper"></div>
         </li>
-        <li id="carousel__slide2" tabindex="0" class="carousel__slide">
-          <div class="carousel__snapper"></div>
+        <li id="carousel__slide2" tabIndex="0" className="carousel__slide">
+          <div className="carousel__snapper"></div>
         </li>
-        <li id="carousel__slide3" tabindex="0" class="carousel__slide">
-          <div class="carousel__snapper"></div>
+        <li id="carousel__slide3" tabIndex="0" className="carousel__slide">
+          <div className="carousel__snapper"></div>
         </li>
       </ol>
-      <aside class="carousel__navigation">
-        <ol class="carousel__navigation-list">
-          <li class="carousel__navigation-item">
-            <a href="#carousel__slide1" class="carousel__navigation-button">
+      <aside className="carousel__navigation">
+        <ol className="carousel__navigation-list">
+          <li className="carousel__navigation-item">
+            <a href="#carousel__slide1" className="carousel__navigation-button">
               Go to slide 1
             </a>
           </li>
-          <li class="carousel__navigation-item">
-            <a href="#carousel__slide2" class="carousel__navigation-button">
+          <li className="carousel__navigation-item">
+            <a href="#carousel__slide2" className="carousel__navigation-button">
               Go to slide 2
             </a>
           </li>
-          <li class="carousel__navigation-item">
-            <a href="#carousel__slide3" class="carousel__navigation-button">
+          <li className="carousel__navigation-item">
+            <a href="#carousel__slide3" className="carousel__navigation-button">
               Go to slide 3
             </a>
           </li>
