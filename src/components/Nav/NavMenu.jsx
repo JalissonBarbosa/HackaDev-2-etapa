@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 
+import Rotas from "../Rotas/";
+
 const Ul = styled.ul`
   list-style: none;
   display: flex;
@@ -32,11 +34,11 @@ const Ul = styled.ul`
 const NavMenu = ({ open }) => {
   return (
     <Ul open={open}>
-      <li>Inicio</li>
+      <li><a href="/">Inicio</a></li>
       <li>About Us</li>
       <li>Feminino</li>
       <li>Masculino</li>
-      <li>LogIn</li>
+      <li><a href="/Login">LogIn</a></li>
     </Ul>
   );
 };
