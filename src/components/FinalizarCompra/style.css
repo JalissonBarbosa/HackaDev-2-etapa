@@ -1,0 +1,46 @@
+.finalizarCompra{
+  width: var(--larguraSacola);
+  height: var(--alturaFinalizarCompra);
+  background-color: var(--whiteColor);
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.areaValorParcial{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+#valor {
+  line-height: 1.5;
+  font-size: 15px;
+  font-weight: 700;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.226);
+}
+.finalizarCompra a{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+#botaoFinalizarCompra{
+  width: 100%;
+  height: var(--alturaFinalizarCompra);
+  align-self: flex-end;
+  border: none;
+  border-radius: 10px 0 0 0;
+  background-color: var(--corPrimaria);
+  color: var(--whiteColor);
+  font-size: 15px;
+  font-weight: 500;
+}
+@media(min-width:400px){
+  #botaoFinalizarCompra{
+    width: 160px;
+    height: 40px;
+    border-radius: 5px;
+  }
+}
