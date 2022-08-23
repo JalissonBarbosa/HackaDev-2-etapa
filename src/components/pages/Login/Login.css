@@ -1,0 +1,25 @@
+.background {
+    height: 100vh;
+    display: flex;
+}
+
+.bloco {
+    height: 100%;
+    width: 50%;
+}
+
+#left {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+#right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bloco img {
+    height: 90%;
+}

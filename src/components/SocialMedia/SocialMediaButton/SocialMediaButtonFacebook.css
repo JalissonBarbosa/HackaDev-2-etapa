@@ -1,0 +1,13 @@
+.SocialMediaButtonFacebook {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1877f2;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+}
+
+.SocialMediaButtonFacebook label {
+    margin: 0 5px 0 5px;
+}
