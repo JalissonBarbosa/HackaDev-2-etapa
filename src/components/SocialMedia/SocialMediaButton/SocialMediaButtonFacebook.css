@@ -6,8 +6,11 @@
     border-radius: 30px;
     color: white;
     font-weight: bold;
+    width: 48%;
+    cursor: pointer;
+    border: none;
 }
 
-.SocialMediaButtonFacebook label {
+.SocialMediaButtonFacebook p {
     margin: 0 5px 0 5px;
 }

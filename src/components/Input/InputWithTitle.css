@@ -1,0 +1,30 @@
+.InputWithTitle {
+    width: 95%;
+}
+.title {
+    display: flex;
+    flex-direction: row;
+}
+
+.title {
+    margin-left: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.title a {
+    margin-left: 0.2rem;
+    font-size: 0.8rem;
+}
+
+.InputWithTitle input {
+    width: 100%;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+}
+
+p {
+    font-weight: bold;
+}

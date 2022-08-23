@@ -6,9 +6,9 @@ import Google from '../../images/google.png';
 
 export default function SocialMediaButtonGoogle() {
     return (
-        <div className="SocialMediaButtonGoogle">
+        <button className="SocialMediaButtonGoogle">
             <img src={Google}></img>
-            <label>Google</label>
-        </div>
+            <p>Google</p>
+        </button>
     )
 }

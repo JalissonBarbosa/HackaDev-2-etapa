@@ -6,9 +6,9 @@ import Facebook from '../../images/facebook.png';
 
 export default function SocialMediaButtonFacebook() {
     return (
-        <div className="SocialMediaButtonFacebook">
+        <button className="SocialMediaButtonFacebook">
             <img src={Facebook}></img>
-            <label>Facebook</label>
-        </div>
+            <p>Facebook</p>
+        </button>
     )
 }
