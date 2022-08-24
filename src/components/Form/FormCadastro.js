@@ -3,6 +3,7 @@ import React from "react";
 import './../../index.css';
 import './FormCadastro.css';
 import InputWithTitle from "../Input/InputWithTitle";
+import Button from '../Button/Button';
 
 export default function FormCadastro() {
     return (
@@ -56,6 +57,12 @@ export default function FormCadastro() {
                         href="/" />
                 </div>
             </div>
+            <div className="contratoContainer">
+                <input type="checkbox"></input>
+                <div><p>Aceito os termos do</p>
+                <a href="/Contrato">contrato.</a></div>
+            </div>
+            <Button nome="Cadastrar"/>
         </div>
     )
 }
