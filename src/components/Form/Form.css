@@ -1,10 +1,25 @@
 .Form {
-    width: 300px;
-    height: 300px;
-    box-shadow: 0px 0px 11px 4px #000000;
+    width: 400px;
+    height: 350px;
+    box-shadow: 0px 0px 16px -3px #000000;
     border-radius: 30px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+}
+
+.footerForm {
+    display: flex;
+    flex-direction: row;
+}
+
+.footerForm a:hover {
+    transition: all 0s;
+    font-weight: bold;
+    color: rgb(247, 0, 255);
+}
+
+.footerForm a {
+    margin-left: 5px;
 }

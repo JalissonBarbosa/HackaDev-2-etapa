@@ -13,7 +13,7 @@ export default function Login () {
     return (
         <div className="background">
             <div className="bloco" id="left">
-                <img className="loginPromo" src={loginPromo}></img>
+                <img className="loginPromo" src={loginPromo} alt="loginPromo"></img>
             </div>
             <div className="bloco" id="right">
                 <Form />

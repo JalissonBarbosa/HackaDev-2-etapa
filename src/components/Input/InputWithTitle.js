@@ -1,4 +1,3 @@
-import { type } from '@testing-library/user-event/dist/type';
 import React from 'react';
 
 import '../../index.css';
@@ -14,7 +13,6 @@ export default function InputWithTitle (props) {
             <input type={props.type} placeholder={props.placeholder}></input>       
         </div>
     )
-
 }
 
 // Declarar:

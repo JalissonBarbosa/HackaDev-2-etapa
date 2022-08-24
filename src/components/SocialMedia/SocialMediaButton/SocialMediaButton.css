@@ -1,0 +1,29 @@
+.SocialMediaButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #323538;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    width: 48%;
+    cursor: pointer;
+    border: none;
+}
+
+.SocialMediaButton p {
+    margin: 0 5px 0 5px;
+}
+
+.SocialMediaButton:hover {
+    transition: all .5s;
+    cursor: pointer;
+    transform: scale(1.07);
+    box-shadow: 
+      0px 0px 6px 0px 
+    rgba(255, 121, 242, 0.4);
+    background: linear-gradient(90deg, 
+    rgba(73,73,73,1) 0%, 
+    rgba(0,0,0,1) 50%, 
+    rgba(74,74,74,1) 100%);
+}

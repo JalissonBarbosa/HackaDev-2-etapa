@@ -1,8 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 
-import Rotas from "../Rotas/";
-
 const Ul = styled.ul`
   list-style: none;
   display: flex;

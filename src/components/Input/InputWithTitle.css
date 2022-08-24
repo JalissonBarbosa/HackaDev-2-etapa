@@ -17,12 +17,29 @@
     font-size: 0.8rem;
 }
 
+.title a:hover {
+    transition: all 0s;
+    font-weight: bold;
+    color: rgb(247, 0, 255);
+}
+
 .InputWithTitle input {
     width: 100%;
     border-radius: 30px;
     display: flex;
     align-items: center;
     padding: 0.5rem 0.5rem 0.5rem 1rem;
+    background-color: rgb(235, 235, 235);
+    border: none;
+}
+
+.InputWithTitle input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    transition: all .5s;
+    transform: scale(1.03);
+    border: 1px solid rgb(86, 86, 86);
+    border-radius: 10px;
 }
 
 p {
