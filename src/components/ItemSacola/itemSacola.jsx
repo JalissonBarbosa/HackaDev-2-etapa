@@ -3,6 +3,7 @@ import { useEffect } from "react"
 import "./style.css";
 
 const Item = ({handleAlterarItem,dadosItem, handleDeleteItem})=>{
+  console.log("renderizei item");
    const handleAlterarQuantidade= (id, quantidade)=>{
     handleAlterarItem(id, "quantidade", quantidade)
   }
@@ -23,10 +24,10 @@ const Item = ({handleAlterarItem,dadosItem, handleDeleteItem})=>{
     atualizaBotoes()
   }
   const limite = ()=>{
-    if (dadosItem.quantidade == 1) {
+    if (dadosItem.quantidade === 1) {
       return 1
     }
-    if (dadosItem.quantidade == dadosItem.limite) {
+    if (dadosItem.quantidade === dadosItem.limite) {
       return 2
     }
     return 0;

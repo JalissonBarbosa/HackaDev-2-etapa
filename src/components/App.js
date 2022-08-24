@@ -55,7 +55,7 @@ function App() {
       cor: "Azul",
       limite: 6,
       imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrSIlW7LHinSw-OS9qZPeiaUEIRcgF37BbcM-M3vSQ6YPMcQlEAZ-KQHtP0ZdmBVaUzzE&usqp=CAU",
-      preco: 160},
+      preco: 119.99},
     {id:7,
       descricao: "Roupa 1",
       tam: "P",
@@ -71,7 +71,7 @@ function App() {
       cor: "Azul",
       limite: 6,
       imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrSIlW7LHinSw-OS9qZPeiaUEIRcgF37BbcM-M3vSQ6YPMcQlEAZ-KQHtP0ZdmBVaUzzE&usqp=CAU",
-      preco: 160},
+      preco: 180},
      ]
     )
 
@@ -89,20 +89,28 @@ function App() {
     //U
     const handleAlterarItem = (id, chave, valor)=>{
       let lista = produtosSacola;
-      for (const item of lista) {
-        if (item.id === id) {
-          item[chave] = valor
+      for (let i = 0; i < lista.length; i++ ) {
+        if (lista[i].id === id) {
+          lista[i][chave] = valor
           setProdutos(lista);
-          return item
-        }
+          
+        } 
       }
+       // let item = produtosSacola[i];
+          // item[chave] = valor
+
+          // handleDeleteItem(id)
+
+          // handleNovoItem(item)
+          // console.log(produtosSacola);
     }
 
    //D    
     const handleDeleteItem = (id)=>{
       let lista = produtosSacola.filter(dados => dados.id !== id)
-     setProdutos(lista)
+      setProdutos(lista)
     }
+
     const handleDeleteTodos = ()=>{
      setProdutos([])
     }
