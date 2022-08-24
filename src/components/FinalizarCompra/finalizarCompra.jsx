@@ -6,7 +6,7 @@ const Finalizar = ({getValorTotal})=>{
   return(
     <div className="finalizarCompra">
         <div className="areaValorParcial">
-          <p id="valor">R${/*valorItens.toFixed(2)*/}</p>
+          <p id="valor">R${valor.toFixed(2)}</p>
         </div>
       <a href="#"><button id="botaoFinalizarCompra">Finalizar Compra </button></a>
       </div>

@@ -87,7 +87,8 @@ function App() {
     }
 
     //U
-    const handleAlterarItem = (id, chave, valor)=>{
+    
+    const handleAlterarItem1 = (id, chave, valor)=>{
       let lista = produtosSacola;
       for (let i = 0; i < lista.length; i++ ) {
         if (lista[i].id === id) {
@@ -96,15 +97,19 @@ function App() {
           
         } 
       }
-       // let item = produtosSacola[i];
-          // item[chave] = valor
-
-          // handleDeleteItem(id)
-
-          // handleNovoItem(item)
-          // console.log(produtosSacola);
     }
-
+    //Teste useState
+    const handleAlterarItem2 = (id, chave, valor)=>{
+      let lista = produtosSacola;
+      for (let i = 0; i < produtosSacola.length; i++) {
+        let item = produtosSacola[i];
+           item[chave] = valor
+           handleDeleteItem(id)
+           handleNovoItem(item)
+           console.log(produtosSacola);
+      }
+    }
+    
    //D    
     const handleDeleteItem = (id)=>{
       let lista = produtosSacola.filter(dados => dados.id !== id)
