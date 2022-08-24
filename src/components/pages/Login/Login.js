@@ -4,7 +4,8 @@ import React from "react";
 import './Login.css';
 
 // Importação de componentes
-import Form from '../../Form/Form';
+import Navbar from "../../Nav/Navbar";
+import FormLogin from '../../Form/FormLogin';
 
 // Importação de imagens
 import loginPromo from '../../images/loginPromo.png';
@@ -12,11 +13,12 @@ import loginPromo from '../../images/loginPromo.png';
 export default function Login () {
     return (
         <div className="background">
+            <Navbar id="header"/>
             <div className="bloco" id="left">
-                <img className="loginPromo" src={loginPromo} alt="loginPromo"></img>
+                <img className="login" src={loginPromo} alt="loginPromo"></img>
             </div>
             <div className="bloco" id="right">
-                <Form />
+                <FormLogin />
             </div>
         </div>
     )

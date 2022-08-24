@@ -1,6 +1,6 @@
 import React from "react"
 
-import './Form.css';
+import './FormLogin.css';
 import '../../index.css';
 import SocialMedia from '../SocialMedia/SocialMedia';
 import InputWithTitle from "../Input/InputWithTitle";
@@ -26,7 +26,7 @@ export default function Form () {
                 nome="Login"/>
             <div className="footerForm">
                 <p>Ainda não se cadastrou?</p>
-                <a href="/">Cadastre-se agora!</a>
+                <a href="/Cadastro">Cadastre-se agora!</a>
             </div>
         </div>
     )

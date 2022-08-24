@@ -1,25 +1,25 @@
-.background {
+.Cbackground {
     height: 100vh;
     display: flex;
 }
 
-.bloco {
+.Cbloco {
     height: 100%;
     width: 50%;
 }
 
-#right {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#left {
+#Cright {
     display: flex;
     align-items: flex-end;
     justify-content: center;
 }
 
-.bloco img {
+#Cleft {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Cbloco img {
     height: 90%;
 }
