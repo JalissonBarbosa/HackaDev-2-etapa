@@ -5,20 +5,16 @@ import Finalizar from "../FinalizarCompra/finalizarCompra";
 import SacolaComItens from "../SacolaComItens/sacolaComItens";
 import BotaoLimparSacola from "../BotaoLimparSacola/botaoLimparSacola";
 
-const AreaSacola = ({handleAlterarItem, handleDeleteTodos, handleDeleteItem, produtosSacola}) =>{
-  console.log("renderizei areaSacola");
-  let sacolaEstaVazia = produtosSacola.length === 0;
+const AreaSacola = ({handleAlterarItem, handleDeleteTodos, handleDeleteItem, handleGetItens}) =>{
+  let sacolaEstaVazia = handleGetItens().length === 0;
   
   const getValorTotal = ()=>{
     let valorTotal = 0;
-    for (const item of produtosSacola) {
+    for (const item of handleGetItens()) {
       valorTotal += (item.preco * item.quantidade)
     }
-    console.log(valorTotal);
     return valorTotal;
   }
-
-
   return (
     <>
     <section id="sacola" className="visivel">
@@ -36,7 +32,7 @@ const AreaSacola = ({handleAlterarItem, handleDeleteTodos, handleDeleteItem, pro
       </div> 
       { sacolaEstaVazia
         ? <SacolaVazia />
-        : [<SacolaComItens handleAlterarItem={handleAlterarItem}  handleDeleteItem={handleDeleteItem} produtosSacola={produtosSacola} handleDeleteTodos={handleDeleteTodos} />, <Finalizar getValorTotal={getValorTotal} />]
+        : [<SacolaComItens handleAlterarItem={handleAlterarItem}  handleDeleteItem={handleDeleteItem} handleGetItens={handleGetItens} handleDeleteTodos={handleDeleteTodos} />, <Finalizar getValorTotal={getValorTotal} />]
       }   
       
     </div>

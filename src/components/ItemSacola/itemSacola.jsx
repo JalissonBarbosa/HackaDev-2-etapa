@@ -3,7 +3,6 @@ import { useEffect } from "react"
 import "./style.css";
 
 const Item = ({handleAlterarItem,dadosItem, handleDeleteItem})=>{
-  console.log("renderizei item");
    const handleAlterarQuantidade= (id, quantidade)=>{
     handleAlterarItem(id, "quantidade", quantidade)
   }
@@ -30,7 +29,6 @@ const Item = ({handleAlterarItem,dadosItem, handleDeleteItem})=>{
     if (dadosItem.quantidade === dadosItem.limite) {
       return 2
     }
-    return 0;
   }
   const atualizaBotoes = () =>{
     let componente = document.getElementById(`${dadosItem.id}`)
@@ -71,7 +69,7 @@ const Item = ({handleAlterarItem,dadosItem, handleDeleteItem})=>{
    
   return (
     <div className="itemSacola" id={dadosItem.id}>
-          <img className="imagemProduto" src={dadosItem.imagem}></img>
+          <img className="imagemProduto" src={dadosItem.imagem} alt="Imagem doproduto" ></img>
           <div className="dadosProduto">
             <h4 id="nomeProduto">{dadosItem.descricao}</h4>
             <div className="infoProdutos">

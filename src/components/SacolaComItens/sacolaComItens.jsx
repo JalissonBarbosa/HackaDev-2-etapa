@@ -1,10 +1,10 @@
 import React from 'react'
 import Item from '../ItemSacola/itemSacola'
 import "./style.css";
-const SacolaComItens = ({handleAlterarItem, handleDeleteItem, produtosSacola})=>{
+const SacolaComItens = ({handleAlterarItem, handleDeleteItem, handleGetItens})=>{
   return(
     <div className="conteudoSacola">
-          {produtosSacola.map(dados => <Item dadosItem={dados} handleAlterarItem={handleAlterarItem}   handleDeleteItem={handleDeleteItem}  ></Item>)}
+          {handleGetItens().map(dados => <Item dadosItem={dados} handleAlterarItem={handleAlterarItem}   handleDeleteItem={handleDeleteItem}  ></Item>)}
       </div> 
   )
 }

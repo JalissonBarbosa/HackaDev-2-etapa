@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import "./style.css";
 const Finalizar = ({getValorTotal})=>{
   let valor = getValorTotal()
@@ -8,7 +7,7 @@ const Finalizar = ({getValorTotal})=>{
         <div className="areaValorParcial">
           <p id="valor">R${valor.toFixed(2)}</p>
         </div>
-      <a href="#"><button id="botaoFinalizarCompra">Finalizar Compra </button></a>
+      <a href="/"><button id="botaoFinalizarCompra">Finalizar Compra </button></a>
       </div>
   )
 }
