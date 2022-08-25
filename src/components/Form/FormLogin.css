@@ -12,6 +12,7 @@
 .footerForm {
     display: flex;
     flex-direction: row;
+    font-size: 0.5rem;
 }
 
 .footerForm a:hover {

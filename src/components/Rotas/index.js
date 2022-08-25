@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Inicio from '../pages/Inicio/Inicio';
 import Login from '../pages/Login/Login';
 import Cadastro from '../pages/Cadastro/Cadastro';
+import Contrato from '../pages/Contrato/Contrato';
 
 const Rotas = () => (
     <BrowserRouter>
@@ -14,6 +15,7 @@ const Rotas = () => (
             {/* Rotas secundárias devem ser adicionadas abaixo */}
             <Route path='/Login' element={ <Login /> } />
             <Route path='/Cadastro' element={ <Cadastro /> } />
+            <Route path='/Contrato' element={ <Contrato /> } />
         </Routes>
     </BrowserRouter>
 );
