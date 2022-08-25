@@ -21,9 +21,6 @@ body{
   height: 100vh;
   overflow: overlay;
 }
-body.fixed {
-  overflow: hidden;
-}
 
 button{
   background-color: unset;
@@ -40,6 +37,7 @@ button{
   justify-content: end;
   font-size: 14px;
   padding: 0;
+  z-index: 3000;
 }
 #sacola.visivel{
   display: flex;
@@ -71,12 +69,16 @@ button{
 }
 .cabecalhoSacola button{
   width: 25px;
-  height: 25px;
   visibility: visible;
 }
 .cabecalhoSacola svg{
   height: 20px;
-  fill:#211d1d6b;
+  fill:var(--corPrimaria);
+  
+}
+button#fecharSacola svg{
+  fill: #585757;
+  height: 25px;
 }
 .cabecalhoSacola h3{
   font-weight: 500;

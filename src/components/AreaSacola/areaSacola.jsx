@@ -6,6 +6,17 @@ import SacolaComItens from "../SacolaComItens/sacolaComItens";
 import BotaoLimparSacola from "../BotaoLimparSacola/botaoLimparSacola";
 
 const AreaSacola = ({handleAlterarItem, handleDeleteTodos, handleDeleteItem, handleGetItens}) =>{
+
+  (function fixaFundo(){
+    const body = document.body
+    body.style.overflow = "hidden";
+   })()
+
+  //  (function liberaFundo(){
+  //   const body = document.body
+  //   body.style.overflow = "overlay";
+  //  })()
+
   let sacolaEstaVazia = handleGetItens().length === 0;
   
   const getValorTotal = ()=>{
@@ -16,7 +27,6 @@ const AreaSacola = ({handleAlterarItem, handleDeleteTodos, handleDeleteItem, han
     return valorTotal;
   }
   return (
-    <>
     <section id="sacola" className="visivel">
     <div className="areaSacola">
       <div className="cabecalhoSacola">
@@ -37,7 +47,6 @@ const AreaSacola = ({handleAlterarItem, handleDeleteTodos, handleDeleteItem, han
       
     </div>
   </section>
-  </>
   )
 }
 export default AreaSacola;
