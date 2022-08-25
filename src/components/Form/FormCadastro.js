@@ -60,7 +60,7 @@ export default function FormCadastro() {
             <div className="contratoContainer">
                 <input type="checkbox"></input>
                 <div><p>Aceito os termos do</p>
-                <a href="/Contrato">contrato.</a></div>
+                <a href="/Contrato" target="_blank">contrato.</a></div>
             </div>
             <Button nome="Cadastrar"/>
         </div>

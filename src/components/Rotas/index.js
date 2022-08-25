@@ -6,6 +6,7 @@ import Inicio from '../pages/Inicio/Inicio';
 import Login from '../pages/Login/Login';
 import Cadastro from '../pages/Cadastro/Cadastro';
 import Contrato from '../pages/Contrato/Contrato';
+import PassRecovery from '../pages/PassRecovery/PassRecovery';
 
 const Rotas = () => (
     <BrowserRouter>
@@ -16,6 +17,7 @@ const Rotas = () => (
             <Route path='/Login' element={ <Login /> } />
             <Route path='/Cadastro' element={ <Cadastro /> } />
             <Route path='/Contrato' element={ <Contrato /> } />
+            <Route path='/RecuperarSenha' element={ <PassRecovery /> } />
         </Routes>
     </BrowserRouter>
 );
