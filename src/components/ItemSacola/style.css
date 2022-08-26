@@ -102,8 +102,11 @@
   background-color: var(--whiteColor);
   border: 1px solid var(--buttonColor);
   font-size: 13px;
-  border-radius: 3px;
-  
+  border-radius: 3px; 
+}
+button a{
+  text-decoration: none;
+  color:unset; 
 }
 #botoesConfigura button:hover{
   background-color: var(--corSecundaria);

@@ -1,6 +1,7 @@
 
 import { useEffect } from "react"
 import "./style.css";
+import {Link} from "react-router-dom";
 
 const Item = ({handleAlterarItem,dadosItem, handleDeleteItem})=>{
    const handleAlterarQuantidade= (id, quantidade)=>{
@@ -89,7 +90,7 @@ const Item = ({handleAlterarItem,dadosItem, handleDeleteItem})=>{
               <p id="precoUnitario">R$<span>{dadosItem.preco}</span></p>
             </div> 
             <div id="botoesConfigura">
-              <button>EDITAR</button>
+              <button><Link exact="true" to={"/card"}>EDITAR</Link></button>
               <button onClick={removerItem}>REMOVER</button>
             </div>
           </div>
