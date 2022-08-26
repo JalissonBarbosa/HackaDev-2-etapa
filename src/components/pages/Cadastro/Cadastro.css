@@ -20,6 +20,19 @@
     justify-content: center;
 }
 
-.Cbloco img {
-    height: 90%;
+.Cbloco .cadastroPromo {
+    max-width: 100%;
+    max-height: 90%;
+    height: auto;
+    width: auto;
 }
+
+    @media (max-width: 768px) {
+        .Cbloco#Cright {
+            display: none;
+        }
+
+        .Cbloco#Cleft {
+            width: 100%;
+        }
+    }
