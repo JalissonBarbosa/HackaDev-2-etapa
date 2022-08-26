@@ -2,7 +2,7 @@
 import React, {useState, useEffect} from 'react'
 import Home from './Homepage';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import AreaSacola from "./AreaSacola/areaSacola";
+import AreaSacola from "./Sacola/AreaSacola/areaSacola";
 import Card from './Card/Card';
 
 
