@@ -1,6 +1,7 @@
 .PRbackground {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     width: 100vw;
     height: 100vh;
 }
@@ -12,3 +13,26 @@
     justify-content: center;
     align-items: center;
 }
+
+.PRbloco img {
+    max-width: 90%;
+    max-height: 90%;
+    width: auto;
+    height: auto;
+}
+
+.PRbloco#PRleft,
+.PRbloco#PRright {
+    align-items: flex-end;
+}
+
+    @media (max-width: 768px) {
+        .PRbloco#PRleft,
+        .PRbloco#PRright {
+            display: none;
+        }
+
+        .PRbloco#PRmid {
+            width: 100%;
+        }
+    }
