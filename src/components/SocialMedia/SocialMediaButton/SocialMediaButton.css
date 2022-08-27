@@ -9,6 +9,8 @@
     width: 48%;
     cursor: pointer;
     border: none;
+    transition-property: transform;
+    transition-duration: 0.5s;
 }
 
 .SocialMediaButton p {
@@ -16,7 +18,6 @@
 }
 
 .SocialMediaButton:hover {
-    transition: all .5s;
     cursor: pointer;
     transform: scale(1.07);
     box-shadow: 

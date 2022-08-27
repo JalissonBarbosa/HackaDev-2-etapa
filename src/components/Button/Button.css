@@ -7,12 +7,13 @@
     padding: 0.5rem;
     background-color: #323538;
     color: white;
+    transition-property: transform;
+    transition-duration: 0.5s;
 }
 
 .Button:hover {
-    transition: all .5s;
     cursor: pointer;
-    transform: scale(1.02);
+    transform: scale(1.03);
     box-shadow: 
       0px 0px 6px 0px 
     rgba(255, 121, 242, 0.4);
@@ -20,4 +21,5 @@
     rgba(73,73,73,1) 0%, 
     rgba(0,0,0,1) 50%, 
     rgba(74,74,74,1) 100%);
+    border-radius: 10px;
 }

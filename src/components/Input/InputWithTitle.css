@@ -30,15 +30,16 @@
     align-items: center;
     padding: 0.5rem 0.5rem 0.5rem 1rem;
     background-color: rgb(235, 235, 235);
-    border: none;
+    border: 0.01px;
+    transition-property: transform, border;
+    transition-duration: 2s;
 }
 
 .InputWithTitle input:focus {
     box-shadow: 0 0 0 0;
     outline: 0;
-    transition: all .5s;
     transform: scale(1.03);
-    border: 1px solid rgb(86, 86, 86);
+    border: 2px solid rgb(86, 86, 86);
     border-radius: 10px;
 }
 
