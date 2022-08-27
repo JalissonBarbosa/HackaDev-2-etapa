@@ -1,7 +1,7 @@
 .itemSacola{
   width: 100%;
   display: flex;
-  min-height: 150px;
+  height: 150px;
   border: 1px solid var(--borderColor);
   border-radius: 5px;
   margin-block: 5px;
@@ -9,7 +9,7 @@
 }
 .imagemProduto{
   border-radius: 3px 0 0 3px;
-  max-width: 140px;
+  max-width: 33%;
 }
 .dadosProduto{
   flex: 1;
@@ -102,5 +102,15 @@
   background-color: var(--whiteColor);
   border: 1px solid var(--buttonColor);
   font-size: 13px;
-  border-radius: 3px;
+  border-radius: 3px; 
+}
+button a{
+  text-decoration: none;
+  color:unset; 
+}
+#botoesConfigura button:hover{
+  background-color: var(--corSecundaria);
+  color: var(--whiteColor);
+  transform: scale(1.05);
+  transition: transform 300ms;
 }

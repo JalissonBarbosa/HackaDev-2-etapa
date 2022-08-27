@@ -1,6 +1,7 @@
 
 import { useEffect } from "react"
 import "./style.css";
+import {Link} from "react-router-dom";
 
 const Item = ({handleAlterarItem,dadosItem, handleDeleteItem})=>{
    const handleAlterarQuantidade= (id, quantidade)=>{
@@ -23,13 +24,12 @@ const Item = ({handleAlterarItem,dadosItem, handleDeleteItem})=>{
     atualizaBotoes()
   }
   const limite = ()=>{
-    if (dadosItem.quantidade == 1) {
+    if (dadosItem.quantidade === 1) {
       return 1
     }
-    if (dadosItem.quantidade == dadosItem.limite) {
+    if (dadosItem.quantidade === dadosItem.limite) {
       return 2
     }
-    return 0;
   }
   const atualizaBotoes = () =>{
     let componente = document.getElementById(`${dadosItem.id}`)
@@ -70,7 +70,7 @@ const Item = ({handleAlterarItem,dadosItem, handleDeleteItem})=>{
    
   return (
     <div className="itemSacola" id={dadosItem.id}>
-          <img className="imagemProduto" src={dadosItem.imagem}></img>
+          <img className="imagemProduto" src={dadosItem.imagem} alt="Imagem doproduto" ></img>
           <div className="dadosProduto">
             <h4 id="nomeProduto">{dadosItem.descricao}</h4>
             <div className="infoProdutos">
@@ -90,7 +90,7 @@ const Item = ({handleAlterarItem,dadosItem, handleDeleteItem})=>{
               <p id="precoUnitario">R$<span>{dadosItem.preco}</span></p>
             </div> 
             <div id="botoesConfigura">
-              <button>EDITAR</button>
+              <button><Link exact="true" to={"/card"}>EDITAR</Link></button>
               <button onClick={removerItem}>REMOVER</button>
             </div>
           </div>
