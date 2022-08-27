@@ -8,7 +8,6 @@
 
 .PRbloco {
     height: 100%;
-    width: 33%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,9 +20,14 @@
     height: auto;
 }
 
+.PRbloco#PRmid {
+    width: 20%
+}
+
 .PRbloco#PRleft,
 .PRbloco#PRright {
     align-items: flex-end;
+    width: 40%;
 }
 
     @media (max-width: 768px) {

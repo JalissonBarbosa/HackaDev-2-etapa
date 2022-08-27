@@ -1,3 +1,9 @@
+@keyframes surgirDeCima {
+    0%      {transform: translateY(-600px);}
+    50%     {transform: translateY(100px);}
+    100%    {transform: translateY(0px);}
+}
+
 .FormCadastro {
     width: 600px;
     min-height: 400px;
@@ -8,6 +14,7 @@
     align-items: center;
     justify-content: space-around;
     padding: 1rem 0 1rem 0;
+    animation: surgirDeCima 1s;
 }
 
 .dados {

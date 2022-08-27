@@ -1,3 +1,9 @@
+@keyframes surgirDeCima {
+    0%      {transform: translateY(-600px);}
+    50%     {transform: translateY(100px);}
+    100%    {transform: translateY(0px);}
+}
+
 .Form {
     width: 400px;
     height: 350px;
@@ -7,6 +13,7 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    animation: surgirDeCima 1s;
 }
 
 .footerForm {
