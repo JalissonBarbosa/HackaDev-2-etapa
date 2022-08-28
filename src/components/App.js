@@ -4,6 +4,7 @@ import Home from './Homepage';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import AreaSacola from "./Sacola/AreaSacola/areaSacola";
 import Card from './Card/Card';
+import TelaCard from './pages/CardComponets/TelaCard';
 
 
 function App() {
@@ -73,6 +74,7 @@ function App() {
           <Route path="/sacola" element={[<Home />, <AreaSacola handleAlterarItem={handleAlterarItem} handleGetItens={handleGetItens} handleDeleteItem={handleDeleteItem} handleDeleteTodos={handleDeleteTodos} />]}/>
 
           <Route path="/card" element={<Card />}/>
+          <Route path='/TelaCard' element={<TelaCard />}/>
         </Routes>
       </Router>
     </div>
