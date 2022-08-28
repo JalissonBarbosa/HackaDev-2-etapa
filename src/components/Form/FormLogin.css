@@ -1,0 +1,44 @@
+@keyframes surgirDeCima {
+    0%      {transform: translateY(-600px);}
+    50%     {transform: translateY(100px);}
+    100%    {transform: translateY(0px);}
+}
+
+.Form {
+    width: 400px;
+    height: 350px;
+    box-shadow: 0px 0px 16px -3px #000000;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    animation: surgirDeCima 1s;
+}
+
+.footerForm {
+    display: flex;
+    flex-direction: row;
+}
+
+.footerForm a:hover {
+    transition: all 0s;
+    font-weight: bold;
+    color: rgb(247, 0, 255);
+}
+
+.footerForm a {
+    margin-left: 5px;
+}
+
+    @media (max-width: 768px) {
+        .Form {
+            box-shadow: none;
+        }
+    }
+
+    @media (max-width: 400px) {
+        .Form {
+            width: 100%;
+        }
+    }

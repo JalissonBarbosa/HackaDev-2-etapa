@@ -5,6 +5,11 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import AreaSacola from "./Sacola/AreaSacola/areaSacola";
 import Card from './Card/Card';
 
+import Login from './pages/Login/Login';
+import Cadastro from './pages/Cadastro/Cadastro';
+import PassRecovery from './pages/PassRecovery/PassRecovery';
+import Contrato from './pages/Contrato/Contrato';
+
 
 function App() {
   const attLocalstorage = (lista)=>{
@@ -68,12 +73,17 @@ function App() {
     <div className="App">
     <Router>
         <Routes>
-          <Route path="/" element={<Home />}/>
+          <Route exact path="/" element={<Home />}/>
           
           <Route path="/sacola" element={[<Home />, <AreaSacola handleAlterarItem={handleAlterarItem} handleGetItens={handleGetItens} handleDeleteItem={handleDeleteItem} handleDeleteTodos={handleDeleteTodos} />]}/>
 
           <Route path="/card" element={<Card />}/>
-        </Routes>
+
+          <Route path="/Login" element={<Login />} />
+          <Route path="/Cadastro" element={<Cadastro />} />
+          <Route path="/RecuperarSenha" element={<PassRecovery />} />
+          <Route path="/Contrato" element={<Contrato />} />
+         </Routes>
       </Router>
     </div>
     </>
