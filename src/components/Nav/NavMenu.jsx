@@ -49,7 +49,7 @@ const NavMenu = ({ open}) => {
       <li>Feminino</li>
       <li>Masculino</li>
       <li><Link exact="true" to="/sacola">Sacola</Link></li>
-      <li>LogIn</li>
+      <li><Link exact="true" to="/LogIn">Login</Link></li>
     </Ul>
     
   );

@@ -1,0 +1,22 @@
+.Contrato {
+    padding: 1rem;
+    text-align: justify;
+    position: relative;
+    padding-top: 55px;
+}
+
+.main--termo,
+.main--marca {
+    text-align: center;
+    margin: 1rem;
+}
+
+.Contrato p {
+    text-indent: 2rem;
+    font-weight: normal;
+}
+
+.capitulo {
+    font-weight: bold;
+    margin-left: 2rem;
+}
