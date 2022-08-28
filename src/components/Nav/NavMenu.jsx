@@ -44,7 +44,7 @@ const NavMenu = ({ open}) => {
   return (
     
     <Ul open={open}>
-      <li>Inicio</li>
+      <li><Link exact='true' to='/'>Inicio</Link></li>
       <li>About Us</li>
       <li>Feminino</li>
       <li>Masculino</li>
