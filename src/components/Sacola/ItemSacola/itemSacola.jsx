@@ -90,7 +90,7 @@ const Item = ({handleAlterarItem,dadosItem, handleDeleteItem})=>{
               <p id="precoUnitario">R$<span>{dadosItem.preco}</span></p>
             </div> 
             <div id="botoesConfigura">
-              <button><Link exact="true" to={"/card"}>EDITAR</Link></button>
+              <button><Link exact="true" to={"/"}>EDITAR</Link></button>
               <button onClick={removerItem}>REMOVER</button>
             </div>
           </div>
