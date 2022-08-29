@@ -90,15 +90,15 @@ const Container = styled.div`
     position: relative;
     flex: 0 0 100%;
     width: 100%;
-    background: url("assets/img/carousel/img-01.jpg") top center/cover;
+    background: ${({ url1 }) => "url(" + url1 + ")top center/cover"};
     counter-increment: item;
   }
 
   .carousel__slide:nth-child(2) {
-    background: url("assets/img/carousel/img-02.jpg") top center/cover;
+    background: ${({ url2 }) => "url(" + url2 + ")top center/cover"};
   }
   .carousel__slide:nth-child(3) {
-    background: url("assets/img/carousel/img-03.jpg") center center/cover;
+    background: ${({ url3 }) => "url(" + url3 + ")top center/cover"};
   }
 
   .carousel__snapper {
@@ -160,9 +160,9 @@ const Container = styled.div`
   }
 `;
 
-const Carousel = () => {
+const Carousel = ({ url1, url2, url3 }) => {
   return (
-    <Container>
+    <Container url1={url1} url2={url2} url3={url3}>
       <ol className="carousel__viewport">
         <li id="carousel__slide1" tabIndex="0" className="carousel__slide">
           <div className="carousel__snapper"></div>
