@@ -52,7 +52,11 @@ const NavMenu = ({ open }) => {
           Sacola
         </Link>
       </li>
-      <li>LogIn</li>
+      <li>
+        <Link exact="true" to="/Checkout">
+          LogIn
+        </Link>
+      </li>
     </Ul>
   );
 };
