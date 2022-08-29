@@ -1,0 +1,48 @@
+.botoes {
+    display: flex;
+    justify-content: space-evenly;
+    display: inline-flex;
+    padding: 1vw;
+    margin: 1vw;
+    border-radius: 1vw; 
+    flex-wrap: wrap;
+
+}
+
+select {
+    justify-content: space-evenly;
+        display: inline-flex;
+        background: #121213;
+        color: #fff;
+        margin: 1vw;
+        border-radius: 30px;
+        transition: 0.5s;
+        height: 3rem;
+        width: 6rem;
+        font-size:medium;
+        text-align: center;
+        
+}
+    
+select:hover {
+    background: #2e2d2d;
+}
+
+button {
+    background: #121213;
+    color: #fff;
+    border-radius: 30px;
+    transition: 0.5s;
+    height: 3rem;
+    width: 15rem;
+    font-size: large;
+}
+
+button:hover {
+background: #08db8d;
+color: black;
+font-weight: 600;
+
+}
+
+
