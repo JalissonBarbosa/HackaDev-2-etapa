@@ -29,7 +29,7 @@ const Products = () => {
       <Container>
         <Card dir="assets/img/products/product-001.jpg" border="1">
           <p>
-            <strong>Camiseta Teste</strong> <br />
+            <strong><a href="/TelaCard">Camiseta Teste</a></strong> <br />
             <s>R$ 89,90</s> R$ 74,99
           </p>
         </Card>
