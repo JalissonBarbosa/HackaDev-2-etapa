@@ -9,7 +9,7 @@ const Container = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 5px;
-
+  
   @media (min-width: 576px) {
     grid-template-columns: repeat(2, 1fr);
   }

@@ -5,6 +5,9 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import AreaSacola from "./Sacola/AreaSacola/areaSacola";
 import Card from './Card/Card';
 import TelaCard from './pages/CardComponets/TelaCard';
+import Form from './Login/Form/FormLogin';
+import FormCadastro from './Login/Form/FormCadastro';
+import FormPassRecovery from './Login/Form/FormPassRecovery';
 
 
 function App() {
@@ -69,13 +72,20 @@ function App() {
     <div className="App">
     <Router>
         <Routes>
-          <Route path="/" element={<Home />}/>
-          
-          <Route path="/sacola" element={[<Home />, <AreaSacola handleAlterarItem={handleAlterarItem} handleGetItens={handleGetItens} handleDeleteItem={handleDeleteItem} handleDeleteTodos={handleDeleteTodos} />]}/>
-
+          <Route path="/" element={<Home />}/>          
+          <Route path="/sacola" element={[<Home />, 
+          <AreaSacola 
+          handleAlterarItem={handleAlterarItem} 
+          handleGetItens={handleGetItens} 
+          handleDeleteItem={handleDeleteItem} h
+          andleDeleteTodos={handleDeleteTodos} 
+          />]}/>
           <Route path="/card" element={<Card />}/>
           <Route path='/TelaCard' element={<TelaCard />}/>
-        </Routes>
+          <Route path='/Login' element={<Form />}/>
+          <Route path='/Cadastro' element={<FormCadastro />}/>
+          <Route path='/Recover' element={<FormPassRecovery />}/>
+          </Routes>
       </Router>
     </div>
     </>

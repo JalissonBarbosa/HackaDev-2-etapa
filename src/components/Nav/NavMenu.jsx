@@ -2,12 +2,14 @@ import React from "react";
 import styled from "styled-components";
 import {Link} from "react-router-dom";
 const Ul = styled.ul`
-  list-style: none;
+  
   display: flex;
   flex-flow: row nowrap;
 
   li {
+    list-style: none;
     padding: 18px 10px;
+    font-size: 1rem
   }
   a{
     text-decoration: none;
@@ -44,12 +46,12 @@ const NavMenu = ({ open}) => {
   return (
     
     <Ul open={open}>
-      <li>Inicio</li>
+      <li><Link to="/">Inicio</Link></li>
       <li>About Us</li>
       <li>Feminino</li>
       <li>Masculino</li>
       <li><Link exact="true" to="/sacola">Sacola</Link></li>
-      <li>LogIn</li>
+      <li><Link to="/login">LogIn</Link></li>
     </Ul>
     
   );
