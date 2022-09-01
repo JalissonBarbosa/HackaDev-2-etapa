@@ -1,7 +1,7 @@
 import React from 'react';
 import '../botoes.css'
 
-const BotaoTamanho = ({handleAlterarItem}) => {
+const BotaoTamanho = () => {
     return (
         <div className="botoes">
             <select className='tamanho' onChange={atualizouSelect}>
@@ -17,10 +17,13 @@ const BotaoTamanho = ({handleAlterarItem}) => {
 }
 
 
-    const atualizouSelect = () => { 
-      let value = document.querySelector("option::selection")
-        handleAlterarItem ("tam") 
-
+    const atualizouSelect = () => {
+        
+        let select = document.querySelector('.tamanho');
+        let optionValue = select.options[select.selectedIndex];
+        
+        let value = optionValue.value;
+        let text = optionValue.text;
     }
 
     
