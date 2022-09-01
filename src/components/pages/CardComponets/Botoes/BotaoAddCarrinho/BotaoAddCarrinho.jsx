@@ -1,12 +1,12 @@
 import React from "react";
 import '../botoes.css';
 
-
-export function Produtos({handleNovoItem, dadosProduto}) {
+const BotaoAddCarrinho = () => {
     return (
         <div className="botoes">
-            <button onClick={handleNovoItem(dadosProduto)}>Adicionar ao Carrinho</button>
-            
+            <button>Adicionar ao Carrinho</button>
         </div>
     );
 }
+
+export default BotaoAddCarrinho;

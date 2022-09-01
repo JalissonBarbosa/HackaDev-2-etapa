@@ -28,10 +28,10 @@ function App() {
   // [{"id":1,"descricao":"Roupa 1","tam":"M","quantidade":2,"cor":"Azul","limite":6,"imagem":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrSIlW7LHinSw-OS9qZPeiaUEIRcgF37BbcM-M3vSQ6YPMcQlEAZ-KQHtP0ZdmBVaUzzE&usqp=CAU","preco":160},{"id":2,"descricao":"Roupa 1","tam":"M","quantidade":2,"cor":"Azul","limite":6,"imagem":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrSIlW7LHinSw-OS9qZPeiaUEIRcgF37BbcM-M3vSQ6YPMcQlEAZ-KQHtP0ZdmBVaUzzE&usqp=CAU","preco":160},{"id":3,"descricao":"Roupa 1","tam":"M","quantidade":2,"cor":"Azul","limite":6,"imagem":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrSIlW7LHinSw-OS9qZPeiaUEIRcgF37BbcM-M3vSQ6YPMcQlEAZ-KQHtP0ZdmBVaUzzE&usqp=CAU","preco":160},{"id":4,"descricao":"Roupa 1","tam":"P","quantidade":2,"cor":"Azul","limite":6,"imagem":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrSIlW7LHinSw-OS9qZPeiaUEIRcgF37BbcM-M3vSQ6YPMcQlEAZ-KQHtP0ZdmBVaUzzE&usqp=CAU","preco":160},{"id":5,"descricao":"Roupa 1","tam":"M","quantidade":2,"cor":"Azul","limite":6,"imagem":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrSIlW7LHinSw-OS9qZPeiaUEIRcgF37BbcM-M3vSQ6YPMcQlEAZ-KQHtP0ZdmBVaUzzE&usqp=CAU","preco":160},{"id":6,"descricao":"Roupa 1","tam":"P","quantidade":2,"cor":"Azul","limite":6,"imagem":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrSIlW7LHinSw-OS9qZPeiaUEIRcgF37BbcM-M3vSQ6YPMcQlEAZ-KQHtP0ZdmBVaUzzE&usqp=CAU","preco":119.99},{"id":7,"descricao":"Roupa 1","tam":"P","quantidade":2,"cor":"Azul","limite":6,"imagem":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrSIlW7LHinSw-OS9qZPeiaUEIRcgF37BbcM-M3vSQ6YPMcQlEAZ-KQHtP0ZdmBVaUzzE&usqp=CAU","preco":160},{"id":8,"descricao":"Roupa 1","tam":"M","quantidade":2,"cor":"Azul","limite":6,"imagem":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrSIlW7LHinSw-OS9qZPeiaUEIRcgF37BbcM-M3vSQ6YPMcQlEAZ-KQHtP0ZdmBVaUzzE&usqp=CAU","preco":180}]
 
     //C
-     const handleNovoItem = (jsonProduto)=>{
-     let novaLista = [... produtosSacola, jsonProduto]
-       setProdutos(novaLista);
-    }
+    // const handleNovoItem = (jsonProduto)=>{
+    //   let novaLista = [... produtosSacola, jsonProduto]
+    //   setProdutos(novaLista);
+    // }
     //Está funcionando!
 
     //R
@@ -74,7 +74,7 @@ function App() {
           <Route path="/sacola" element={[<Home />, <AreaSacola handleAlterarItem={handleAlterarItem} handleGetItens={handleGetItens} handleDeleteItem={handleDeleteItem} handleDeleteTodos={handleDeleteTodos} />]}/>
 
           <Route path="/card" element={<Card />}/>
-          <Route path='/TelaCard' element={<TelaCard handleNovoItem={handleNovoItem} />}/>
+          <Route path='/TelaCard' element={<TelaCard />}/>
         </Routes>
       </Router>
     </div>
