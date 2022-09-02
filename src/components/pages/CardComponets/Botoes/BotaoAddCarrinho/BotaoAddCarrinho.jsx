@@ -3,7 +3,7 @@ import '../botoes.css';
 
 const BotaoAddCarrinho = () => {
     return (
-        <div className="botoes">
+        <div className="btncarrinho">
             <button>Adicionar ao Carrinho</button>
         </div>
     );

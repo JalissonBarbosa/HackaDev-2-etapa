@@ -1,27 +1,21 @@
 .botoes {
-    display: flex;
-    justify-content: space-evenly;
-    display: inline-flex;
     padding: 1vw;
     margin: 1vw;
     border-radius: 1vw; 
-    flex-wrap: wrap;
-
+    border-box: box-sizing;
 }
 
 select {
-    justify-content: space-evenly;
-        display: inline-flex;
-        background: #121213;
-        color: #fff;
-        margin: 1vw;
-        border-radius: 30px;
-        transition: 0.5s;
-        height: 3rem;
-        width: 6rem;
-        font-size:medium;
-        text-align: center;
-        
+
+    background: #121213;
+    color: #fff;
+    border-radius: 30px;
+    transition: 0.5s;
+    font-size:medium;
+    text-align: center;
+    width: 40vw;
+    height: 8vh;
+    margin-top: 3vh;
 }
     
 select:hover {
@@ -33,16 +27,26 @@ button {
     color: #fff;
     border-radius: 30px;
     transition: 0.5s;
-    height: 3rem;
-    width: 15rem;
+    width: 60vw;
+    height: 8vh;
     font-size: large;
 }
 
 button:hover {
-background: #08db8d;
-color: black;
-font-weight: 600;
+    background: #08db8d;
+    color: black;
+    font-weight: 600;
 
 }
 
+.botoesselect {
+    display: flex;
+    justify-content: space-around;
+    border-box: box-sizing;
+    
+}
 
+.btncarrinho {
+    display: flex;
+    justify-content: center;
+}

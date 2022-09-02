@@ -4,6 +4,25 @@
     box-sizing: border-box;
     justify-content: center;
     flex-direction: column;
+    width: 100%;
+    height: 100%;
 
 }
 
+@media (min-width: 770px) {
+    
+    .teladisplayflex {
+        display: flex;
+    
+    }
+
+    .divcarousel {
+
+
+    }
+    
+    .nomebtn {
+        width: 50%;
+        
+}
+}

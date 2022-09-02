@@ -1,4 +1,18 @@
+.info {
+
+}
+
 small, h2 {
     color: red;
-    display: inline-flex;
+}
+
+.preco {
+    margin-top: 1vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.preco h2 {
+    font-size: 200%;
 }

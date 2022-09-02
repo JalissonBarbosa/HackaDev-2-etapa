@@ -1,5 +1,6 @@
 import React from "react";
-import './BotaoQuantidade.css'
+import './BotaoQuantidade.css';
+
 
 const BotaoQuantidade = () => {
 let a = 1;
@@ -22,7 +23,7 @@ const minus = () => {
 };
 
     return  (
-        <div className="wrapper">
+        <div className="botoes">
         <span onClick={minus} className="minus">-</span>
         <span className="num">01</span>
         <span onClick={plus} className="plus">+</span>

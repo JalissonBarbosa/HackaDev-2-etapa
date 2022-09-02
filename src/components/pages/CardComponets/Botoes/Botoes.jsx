@@ -8,12 +8,15 @@ import BotaoQuantidade from "./BotaoQuantidade/BotaoQuantidade";
 
 const Botoes = () => {
     return (
-        <div className="botoes">
+        <>
+    
+        <div className="botoesselect">
         <BotaoTamanho />
         <SelectCor />
+        </div>
         <BotaoQuantidade />
         <BotaoAddCarrinho />
-        </div>
+        </>
 
     );
 }
