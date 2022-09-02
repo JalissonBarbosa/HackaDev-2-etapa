@@ -1,0 +1,43 @@
+.PRbackground {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.PRbloco {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 55px;
+}
+
+.PRbloco img {
+    max-width: 90%;
+    max-height: 90%;
+    width: auto;
+    height: auto;
+}
+
+.PRbloco#PRmid {
+    width: 20%
+}
+
+.PRbloco#PRleft,
+.PRbloco#PRright {
+    align-items: flex-end;
+    width: 40%;
+}
+
+    @media (max-width: 768px) {
+        .PRbloco#PRleft,
+        .PRbloco#PRright {
+            display: none;
+        }
+
+        .PRbloco#PRmid {
+            width: 100%;
+        }
+    }

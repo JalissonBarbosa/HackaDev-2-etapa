@@ -1,0 +1,10 @@
+
+li {
+    list-style-type: disc;
+    list-style-position: inside ;
+    list-style: none;
+}
+
+h3 {
+    padding: 1rem;
+}

@@ -1,0 +1,40 @@
+.background {
+    height: 100vh;
+    display: flex;
+}
+
+.bloco {
+    height: 100%;
+    width: 50%;
+    padding-top: 55px;
+}
+
+#right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#left {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.bloco .login {
+    max-width: 100%;
+    max-height: 90%;
+    height: auto;
+    width: auto;
+}   
+
+    @media (max-width: 768px) {
+        .bloco#left {
+            display: none;
+        }
+
+        .bloco#right {
+            width: 100%;
+            justify-content: center;
+        }
+    }

@@ -1,0 +1,116 @@
+.itemSacola{
+  width: 100%;
+  display: flex;
+  height: 150px;
+  border: 1px solid var(--borderColor);
+  border-radius: 5px;
+  margin-block: 5px;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.203);
+}
+.imagemProduto{
+  border-radius: 3px 0 0 3px;
+  max-width: 33%;
+}
+.dadosProduto{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 12px;
+  
+}
+#nomeProduto{
+  font-size: 16px;
+  font-weight: 500;
+  text-shadow: 1px 1px 1px rgba(36, 36, 36, 0.177);
+}
+.infoProdutos{
+  display: grid;
+  grid-template-areas: "A B" "C D";
+  gap: 15%;
+  flex: 1;
+  padding-block: 10px;
+  color: #6d768ad2;
+}
+.tamanhoPeca{
+  grid-area: A;
+  align-self: center;
+}
+.tamanhoPeca span, span.corProduto{
+  color: #1c1c1c;
+}
+.corPeca{
+  grid-area: C;
+  align-self: center;
+  display: flex;
+  gap: 5px;
+}
+/*span.corProduto{
+  align-self: center;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--corPrimaria);
+  border: 1px solid var(--borderColor);
+}*/
+#botoesQuantidade{
+  grid-area: B;
+  display: flex;
+}
+#botaoQuantidade{
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  font-size: 18px;
+  border-radius: 50%;
+  border: 1px solid var(--corSecundaria);
+  color: var(--corSecundaria);
+}
+#botaoQuantidade svg{
+  width: 10px;
+  height: 10px;
+}
+#botaoQuantidade.disabled{
+ fill: #6d768ad2;
+ border-color: #6d768ad2;
+}
+#quantidade{
+  padding-inline: 10px;
+  text-align: center;
+  align-self: center;
+  color: var(--corSecundaria);
+  font-weight: 500;
+}
+#precoUnitario{
+  grid-area: D;
+  align-self: center;
+  color: var(--corPrimaria);
+  font-weight: 700;
+  line-height: 1.5;
+}
+#botoesConfigura{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+#botoesConfigura button{
+  flex: 1;
+  height: 30px;
+  background-color: var(--whiteColor);
+  border: 1px solid var(--buttonColor);
+  font-size: 13px;
+  border-radius: 3px; 
+}
+button a{
+  text-decoration: none;
+  color:unset; 
+}
+#botoesConfigura button:hover{
+  background-color: var(--corSecundaria);
+  color: var(--whiteColor);
+  transform: scale(1.05);
+  transition: transform 300ms;
+}
