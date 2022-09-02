@@ -28,7 +28,7 @@ select:hover {
     background: #2e2d2d;
 }
 
-button {
+#botaoAdicionarCarrinho {
     background: #121213;
     color: #fff;
     border-radius: 30px;
@@ -38,7 +38,7 @@ button {
     font-size: large;
 }
 
-button:hover {
+#botaoAdicionarCarrinho:hover {
 background: #08db8d;
 color: black;
 font-weight: 600;

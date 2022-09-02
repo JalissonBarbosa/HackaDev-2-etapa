@@ -6,13 +6,13 @@ import BotaoAddCarrinho from "./BotaoAddCarrinho/BotaoAddCarrinho";
 import BotaoQuantidade from "./BotaoQuantidade/BotaoQuantidade";
 
 
-const Botoes = () => {
+const Botoes = ({handleNovoItem}) => {
     return (
         <div className="botoes">
         <BotaoTamanho />
         <SelectCor />
         <BotaoQuantidade />
-        <BotaoAddCarrinho />
+        <BotaoAddCarrinho handleNovoItem={handleNovoItem}/>
         </div>
 
     );

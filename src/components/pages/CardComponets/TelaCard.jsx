@@ -8,14 +8,14 @@ import Carousel from "../../Content/Carousel";
 import Navbar from "../../Nav/Navbar";
 
 
-const TelaCard = () => {
+const TelaCard = ({handleNovoItem}) => {
     return (
 
         <div className="telacard">
         <Navbar />
         <Carousel />
         <InfoInicial />
-        <Botoes />
+        <Botoes handleNovoItem={handleNovoItem}/>
         <Caracteristicas />
         </div>
      
