@@ -21,7 +21,7 @@ export default function Form () {
                 type="pass"
                 placeholder="Insira sua senha"
                 link="Esqueceu?"
-                href="/RecuperarSenha" />
+                href="/Recover" />
             <Button 
                 nome="Login"/>
             <div className="footerForm">

@@ -5,9 +5,10 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import AreaSacola from "./Sacola/AreaSacola/areaSacola";
 import Card from './Card/Card';
 import TelaCard from './pages/CardComponets/TelaCard';
-import Form from './Login/Form/FormLogin';
-import FormCadastro from './Login/Form/FormCadastro';
-import FormPassRecovery from './Login/Form/FormPassRecovery';
+import PageLogin from './pages/PageLogin/Login';
+import PageCadastro from './pages/PageCadastro/PageCadastro';
+import PagePassRecovery from './pages/PagePassRecovery/PassRecovery';
+import Contrato from './pages/PageContrato/Contrato';
 
 
 function App() {
@@ -82,9 +83,10 @@ function App() {
           />]}/>
           <Route path="/card" element={<Card />}/>
           <Route path='/TelaCard' element={<TelaCard />}/>
-          <Route path='/Login' element={<Form />}/>
-          <Route path='/Cadastro' element={<FormCadastro />}/>
-          <Route path='/Recover' element={<FormPassRecovery />}/>
+          <Route path='/Login' element={<PageLogin />}/>
+          <Route path='/Cadastro' element={<PageCadastro />}/>
+          <Route path='/Recover' element={<PagePassRecovery />}/>
+          <Route path='/Contrato' element={<Contrato />}/>
           </Routes>
       </Router>
     </div>
