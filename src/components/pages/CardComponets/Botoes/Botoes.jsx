@@ -6,15 +6,19 @@ import BotaoAddCarrinho from "./BotaoAddCarrinho/BotaoAddCarrinho";
 import BotaoQuantidade from "./BotaoQuantidade/BotaoQuantidade";
 
 
-const Botoes = ({handleNovoItem}) => {
+const Botoes = ({handleNovoItem, obterItem, atualizarItem}) => {
     return (
+        <>
         <div className="botoes">
-        <BotaoTamanho />
-        <SelectCor />
-        <BotaoQuantidade />
-        <BotaoAddCarrinho handleNovoItem={handleNovoItem}/>
+        <BotaoTamanho atualizarItem={atualizarItem} obterItem={obterItem}/>
+        <SelectCor atualizarItem={atualizarItem} obterItem={obterItem}/>
+        <BotaoQuantidade atualizarItem={atualizarItem} obterItem={obterItem}/>
+        
         </div>
-
+        <div className="addCarrinho">
+        <BotaoAddCarrinho handleNovoItem={handleNovoItem} obterItem={obterItem}/>
+        </div>
+    </>
     );
 }
 

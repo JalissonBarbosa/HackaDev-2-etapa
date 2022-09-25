@@ -1,9 +1,22 @@
-.telacard {
-     
-    margin: 1rem;
+.telacard{
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    margin-inline: 3%;
+    padding-top: 55px;
+    padding-bottom: 55px;
+}
+.detalhes {
+    display: flex;
     box-sizing: border-box;
     justify-content: center;
     flex-direction: column;
-
+    align-items: center;
+    margin: auto;
 }
-
+@media (max-width:840px){
+    .telacard{
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+}

@@ -90,8 +90,8 @@ const Item = ({handleAlterarItem,dadosItem, handleDeleteItem})=>{
               <p id="precoUnitario">R$<span>{dadosItem.preco}</span></p>
             </div> 
             <div id="botoesConfigura">
-              <button><Link exact="true" to={"/TelaCard"}>EDITAR</Link></button>
-              <button onClick={removerItem}>REMOVER</button>
+              <Link  exact="true" to={`/TelaCard${dadosItem.id}`}><button>EDITAR</button></Link>
+              <button onClick={removerItem} className="excluir">REMOVER</button>
             </div>
           </div>
       </div>

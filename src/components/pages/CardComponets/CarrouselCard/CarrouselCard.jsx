@@ -1,11 +1,11 @@
 import React from "react";
 
-const CarrouselCard = () => {
+const CarouselCard = ({img}) => {
     return (
         <>
-        <img src="./foto4.jpg" alt="" />
+        <img src={img} alt="" />
         </>
     );
 }
 
-export default CarrouselCard;   
+export default CarouselCard;   
