@@ -18,7 +18,6 @@ const BotaoTamanho = ({atualizarItem, obterItem}) => {
         }
     const atualizaTamanho =()=>{
         let select = document.getElementById("selectTamanho")
-        console.log(select);
         let tamanho = select.options[select.selectedIndex].value;
         atualizarItem("tam", tamanho);
     }

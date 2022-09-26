@@ -5,10 +5,10 @@ const BotaoQuantidade = ({atualizarItem, obterItem}) => {
 const item = obterItem();
 let a = item.quantidade;
 let limite = item.limite
+
 const atualizaValor= ()=>{
     let num = document.querySelector(".num")
     let valor =  num.innerText
-    console.log(valor);
     atualizarItem("quantidade", Number(valor))
 }
 
@@ -28,10 +28,8 @@ const minus = () => {
         num.innerText = a;
         atualizaValor()
     }
+
 };
-useEffect(()=>{
-    atualizaValor()
-})
 
     return  (
         <div className="wrapper">

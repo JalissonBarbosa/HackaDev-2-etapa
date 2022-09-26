@@ -2,9 +2,11 @@
     display: flex;
     flex-direction: row;
     gap: 5%;
-    margin-inline: 3%;
+    margin: auto;
+    padding-inline: 3%;
     padding-top: 55px;
     padding-bottom: 55px;
+    max-width: 1500px;
 }
 .detalhes {
     display: flex;

@@ -32,21 +32,27 @@ function App() {
     //C
     const handleNovoItem = (jsonProduto)=>{
       if(eMesmoProduto(jsonProduto)){
-        return
+        return;
       }else{
       let novaLista = [...produtosSacola, jsonProduto]
       setProdutos(novaLista);
       }
       alert("Item adicionado!")
     }
+
+
     const eMesmoProduto = (produto)=>{
       let lista = handleGetItens()
       for (let i = 0; i < lista.length; i++ ) {
-        if (lista[i].descricao === produto.descricao &&
-          lista[i].tam === produto.tam &&
-          lista[i].cor === produto.cor) {
+        if (lista[i].descricao == produto.descricao &&
+          lista[i].tam == produto.tam &&
+          lista[i].cor == produto.cor &&
+          !lista[i].id == produto.id) {
             atualizarQuant(lista[i], produto)
             return true;
+        }else if( lista[i].id == produto.id){
+          atualizaItem(produto)
+          return true
         } 
     }
   }
@@ -58,11 +64,21 @@ function App() {
       else{
         handleAlterarItem(produto.id, "quantidade", produto.limite )
       }
-     
+    }
+    const atualizaItem = (produtoNovo)=>{
+      let lista = handleGetItens();
+      for (let i = 0; i < lista.length; i++ ) {
+        if (lista[i].id === produtoNovo.id ) {
+          lista[i] = produtoNovo;
+          setProdutos(lista)
+          alert("Item atualizado!")
+        }
+      }
     }
     //R
     const handleGetItens = ()=>{
       let lista = Array.from(produtosSacola)
+      
       return lista;
     }
 
@@ -97,7 +113,7 @@ function App() {
       let lista = handleGetItens()
       attLocalstorage(lista)
     })
-    
+            
   return (
     <>
     <div className="App">

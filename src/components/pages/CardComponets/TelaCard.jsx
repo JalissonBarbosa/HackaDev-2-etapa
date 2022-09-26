@@ -1,5 +1,5 @@
 import React from "react";
-import { useState, useEffect} from "react";
+import { useState} from "react";
 import { useParams } from "react-router-dom"
 
 
@@ -8,6 +8,7 @@ import Botoes from "./Botoes/Botoes";
 import "./telacard.css";
 import CarouselCard from "./CarrouselCard/CarrouselCard";
 import Navbar from "../../Nav/Navbar";
+import { useEffect } from "react";
 
 
 const TelaCard = ({handleNovoItem, handleGetItens, produto}) => {
@@ -28,18 +29,17 @@ const TelaCard = ({handleNovoItem, handleGetItens, produto}) => {
             }
         }
         let resultado = defineItem()
+
     const [item, setItem] = useState(resultado)   
 
     const obterItem = ()=>{
-        return item
+        return JSON.parse(JSON.stringify(item))
     }
     const atualizarItem = (chave, valor)=>{
         let dados = obterItem()
         dados[chave] = valor;
         setItem(dados)
     }
-    
-    //useEffect(defineItem())
     return (
         <>
         <Navbar />
