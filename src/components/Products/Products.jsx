@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Card from "../Card/Card";
+import {Link} from "react-router-dom";
 
 const Container = styled.div`
   margin-top: 120px;
@@ -24,15 +25,18 @@ const Container = styled.div`
 `;
 
 const Products = () => {
+  
   return (
     <div>
       <Container>
-        <Card dir="assets/img/products/product-001.jpg" border="1">
-          <p>
-            <strong><a href="/TelaCard">Camiseta Teste</a></strong> <br />
-            <s>R$ 89,90</s> R$ 74,99
-          </p>
-        </Card>
+        <Link to="/TelaCard">
+          <Card dir="assets/img/products/product-001.jpg" border="1">
+            <p>
+              <strong>Camiseta Teste</strong> <br />
+              <s>R$ 89,90</s> R$ 74,99
+            </p>
+          </Card>
+        </Link>
         <Card dir="assets/img/products/product-002.jpg" border="1">
           <p>
             <strong>Camiseta Teste</strong> <br />
